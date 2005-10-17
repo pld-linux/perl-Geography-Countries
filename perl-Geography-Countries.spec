@@ -9,13 +9,13 @@ Summary:	Geography::Countries - 2-letter, 3-letter, and numerical codes for coun
 Summary(pl):	Geography::Countries - 2-, 3-literowe i numeryczne kody krajów
 Name:		perl-Geography-Countries
 Version:	1.4
-Release:	1
+Release:	2
 License:	Unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	693426ab59ce3d51fcd48dfe3b402107
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	perl-devel >= 1:5.6.1
+BuildRequires:	rpm-perlprov >= 4.0.2-112.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +33,7 @@ kody zgodnie z definicj± ISO-3166.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+	INSTALLDIRS=site
 %{__make}
 
 %{?with_tests:%{__make} test}
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{perl_vendorlib}/Geography
-%{perl_vendorlib}/Geography/*.pm
+%dir %{perl_sitelib}/Geography
+%{perl_sitelib}/Geography/*.pm
 %{_mandir}/man3/*
