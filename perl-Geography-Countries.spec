@@ -6,7 +6,7 @@
 %define	pdir	Geography
 %define	pnam	Countries
 Summary:	Geography::Countries - 2-letter, 3-letter, and numerical codes for countries
-Summary(pl):	Geography::Countries - 2-, 3-literowe i numeryczne kody krajów
+Summary(pl.UTF-8):   Geography::Countries - 2-, 3-literowe i numeryczne kody krajÃ³w
 Name:		perl-Geography-Countries
 Version:	1.4
 Release:	3
@@ -24,9 +24,9 @@ This module maps country names, and their 2-letter, 3-letter and
 numerical codes, as defined by the ISO-3166 maintenance agency,
 and defined by the UNSD.
 
-%description -l pl
-Ten modu³ odwzorowuje nazwy krajów oraz ich 2-, 3-literowe i liczbowe
-kody zgodnie z definicj± ISO-3166.
+%description -l pl.UTF-8
+Ten moduÅ‚ odwzorowuje nazwy krajÃ³w oraz ich 2-, 3-literowe i liczbowe
+kody zgodnie z definicjÄ… ISO-3166.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
