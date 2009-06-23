@@ -8,12 +8,12 @@
 Summary:	Geography::Countries - 2-letter, 3-letter, and numerical codes for countries
 Summary(pl.UTF-8):	Geography::Countries - 2-, 3-literowe i numeryczne kody krajów
 Name:		perl-Geography-Countries
-Version:	1.4
-Release:	4
+Version:	2009041301
+Release:	1
 License:	Unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	693426ab59ce3d51fcd48dfe3b402107
+# Source0-md5:	2c9ef26b46bbeca9abbca5015cc748b9
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
