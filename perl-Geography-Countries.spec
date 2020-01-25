@@ -4,7 +4,6 @@
 
 %define	pdir	Geography
 %define	pnam	Countries
-%include	/usr/lib/rpm/macros.perl
 Summary:	Geography::Countries - 2-letter, 3-letter, and numerical codes for countries
 Summary(pl.UTF-8):	Geography::Countries - 2-, 3-literowe i numeryczne kody krajów
 Name:		perl-Geography-Countries
